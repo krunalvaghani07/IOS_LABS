@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eae-NE-RdO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background03" translatesAutoresizingMaskIntoConstraints="NO" id="Qgl-Iq-DXx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mzd-Na-qyP">
+                                <rect key="frame" x="107" y="373" width="200" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1HC-Fy-VX7">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aYi-LZ-fkp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Level 1">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="WC8-o0-k5s" kind="show" id="8uA-BE-2lJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjB-Im-ehs">
+                                        <rect key="frame" x="0.0" y="100" width="200" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WKY-iJ-Dlg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Level 2">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tUE-Sc-a5S" kind="show" id="KGs-Gy-WJo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EQi-zc-Xx4"/>
+                                    <constraint firstAttribute="height" constant="150" id="hsU-Kh-9cJ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRl-hw-Pue">
+                                <rect key="frame" x="334" y="767" width="70" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="9H2-Nc-rhs"/>
+                                    <constraint firstAttribute="width" constant="70" id="dkp-Xt-vGE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" systemColor="opaqueSeparatorColor"/>
+                                    <imageReference key="image" image="info.circle.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <segue destination="gVC-HH-Nkb" kind="show" id="qvm-Tg-keD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mzd-Na-qyP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Doq-hv-ww7"/>
+                            <constraint firstItem="mzd-Na-qyP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dsg-0N-v5I"/>
+                            <constraint firstAttribute="trailing" secondItem="Qgl-Iq-DXx" secondAttribute="trailing" id="QAy-tj-FVZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TRl-hw-Pue" secondAttribute="bottom" constant="20" id="Uid-7u-oug"/>
+                            <constraint firstAttribute="bottom" secondItem="Qgl-Iq-DXx" secondAttribute="bottom" id="dD2-O3-h55"/>
+                            <constraint firstItem="Qgl-Iq-DXx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dyf-Nt-ufu"/>
+                            <constraint firstItem="Qgl-Iq-DXx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gZg-eP-X0Q"/>
+                            <constraint firstItem="Qgl-Iq-DXx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pmV-Ox-j0z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TRl-hw-Pue" secondAttribute="trailing" constant="10" id="see-mi-0EW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="hR7-84-WT5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+        <!--Level 2-->
+        <scene sceneID="6iw-dd-Nyn">
+            <objects>
+                <viewController id="tUE-Sc-a5S" customClass="Level2ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wch-Uv-saR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background06" translatesAutoresizingMaskIntoConstraints="NO" id="i2S-Z1-jwA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdj-RD-Ag9">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cjJ-B2-M4Q"/>
+                                    <constraint firstAttribute="width" constant="200" id="yRh-Wi-Zta"/>
+                                </constraints>
+                                <state key="normal" title="The Farmer and the Well">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NGB-lD-9om" kind="show" id="TwU-2Y-9da"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tfx-Zn-dXz"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i2S-Z1-jwA" firstAttribute="leading" secondItem="wch-Uv-saR" secondAttribute="leading" id="9Ua-ga-a4Q"/>
+                            <constraint firstItem="i2S-Z1-jwA" firstAttribute="top" secondItem="tfx-Zn-dXz" secondAttribute="top" id="Fw1-ay-7Fg"/>
+                            <constraint firstItem="Vdj-RD-Ag9" firstAttribute="centerY" secondItem="wch-Uv-saR" secondAttribute="centerY" id="HrM-NO-0Jp"/>
+                            <constraint firstAttribute="trailing" secondItem="i2S-Z1-jwA" secondAttribute="trailing" id="Lhj-xZ-qWz"/>
+                            <constraint firstAttribute="bottom" secondItem="i2S-Z1-jwA" secondAttribute="bottom" id="ScA-up-89x"/>
+                            <constraint firstItem="Vdj-RD-Ag9" firstAttribute="centerX" secondItem="wch-Uv-saR" secondAttribute="centerX" id="te6-PE-deo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Level 2" id="PGp-Gi-4zV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aE-96-vFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="658"/>
+        </scene>
+        <!--The Farmer and the Well-->
+        <scene sceneID="OuN-LF-MeS">
+            <objects>
+                <viewController id="NGB-lD-9om" customClass="FarmerWill1ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5j4-dy-wmO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background05" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-2e-Lca">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Farmer and the Well" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB1-7O-fgV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lPf-Yk-yLd">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">One day, a farmer was looking for a water source for his farm, when he bought a well from his neighbor. The neighbor, however, was cunning. The next day, as the farmer came to draw water from his well, the neighbor refused to let him take any water.
+
+When the farmer asked why, the neighbor replied, “I sold you the well, not the water,” and walked away. Distraught, the farmer went to the emperor to ask for justice. He explained what had happened.
+
+The emperor called on Birbal, one of his nine, and wisest, courtiers. Birbal proceeded to question the neighbor, “Why don’t you let the farmer take water from the well? You did sell the well to the farmer?”</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="efo-4c-PjF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="efo-4c-PjF" firstAttribute="bottom" secondItem="lPf-Yk-yLd" secondAttribute="bottom" id="7yB-b3-APx"/>
+                            <constraint firstItem="vi9-2e-Lca" firstAttribute="trailing" secondItem="5j4-dy-wmO" secondAttribute="trailing" id="Ljf-el-coE"/>
+                            <constraint firstItem="RB1-7O-fgV" firstAttribute="leading" secondItem="efo-4c-PjF" secondAttribute="leading" id="MnQ-n7-uDQ"/>
+                            <constraint firstAttribute="trailing" secondItem="RB1-7O-fgV" secondAttribute="trailing" id="QDP-jl-Tbu"/>
+                            <constraint firstItem="lPf-Yk-yLd" firstAttribute="top" secondItem="RB1-7O-fgV" secondAttribute="bottom" id="Yxk-Bx-tWl"/>
+                            <constraint firstItem="lPf-Yk-yLd" firstAttribute="leading" secondItem="efo-4c-PjF" secondAttribute="leading" id="aU6-5v-1Bx"/>
+                            <constraint firstItem="vi9-2e-Lca" firstAttribute="top" secondItem="5j4-dy-wmO" secondAttribute="top" id="eCf-xr-lDB"/>
+                            <constraint firstItem="efo-4c-PjF" firstAttribute="trailing" secondItem="lPf-Yk-yLd" secondAttribute="trailing" id="kSo-h1-azq"/>
+                            <constraint firstAttribute="bottom" secondItem="vi9-2e-Lca" secondAttribute="bottom" id="lqF-YE-cuK"/>
+                            <constraint firstItem="RB1-7O-fgV" firstAttribute="top" secondItem="efo-4c-PjF" secondAttribute="top" id="pbd-M5-HLj"/>
+                            <constraint firstItem="vi9-2e-Lca" firstAttribute="leading" secondItem="5j4-dy-wmO" secondAttribute="leading" id="qnR-Z8-rE2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Farmer and the Well" id="P44-oy-oj6">
+                        <barButtonItem key="rightBarButtonItem" title="Page 2" id="f2e-WN-94Y">
+                            <connections>
+                                <segue destination="lzP-G3-bz7" kind="show" id="E0a-1a-3uf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5k-Br-212" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2057" y="911"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="cGX-uX-cMF">
+            <objects>
+                <viewController id="lzP-G3-bz7" customClass="FarmerWill2ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="509-Ua-475">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background05" translatesAutoresizingMaskIntoConstraints="NO" id="5W4-S5-87a">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-oT-BO5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">The neighbor replied, “Birbal, I did sell the well to the farmer but not the water within it. He has no right to draw water from the well.”
+
+Birbal said, “Look, since you sold the well, you have no right to keep the water in the farmer’s well. Either you pay rent to the farmer, or take it out immediately.” Realizing that his scheme had failed, the neighbor apologized and went home.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fsU-gd-YjZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5W4-S5-87a" firstAttribute="top" secondItem="509-Ua-475" secondAttribute="top" id="4bv-UZ-inU"/>
+                            <constraint firstItem="5W4-S5-87a" firstAttribute="leading" secondItem="509-Ua-475" secondAttribute="leading" id="Bm9-aj-Cxv"/>
+                            <constraint firstItem="ZW2-oT-BO5" firstAttribute="leading" secondItem="fsU-gd-YjZ" secondAttribute="leading" id="GU9-PZ-yrc"/>
+                            <constraint firstAttribute="bottom" secondItem="5W4-S5-87a" secondAttribute="bottom" id="H9k-WW-BwY"/>
+                            <constraint firstItem="ZW2-oT-BO5" firstAttribute="top" secondItem="fsU-gd-YjZ" secondAttribute="top" id="Uer-rz-Bb9"/>
+                            <constraint firstItem="fsU-gd-YjZ" firstAttribute="bottom" secondItem="ZW2-oT-BO5" secondAttribute="bottom" id="Wnb-EI-2gN"/>
+                            <constraint firstItem="5W4-S5-87a" firstAttribute="trailing" secondItem="509-Ua-475" secondAttribute="trailing" id="fVh-WB-7OX"/>
+                            <constraint firstItem="fsU-gd-YjZ" firstAttribute="trailing" secondItem="ZW2-oT-BO5" secondAttribute="trailing" id="pOF-ox-8it"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 2" id="hY2-rD-XFL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Dx-fB-B6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2886.9565217391305" y="910.71428571428567"/>
+        </scene>
+        <!--The Milkmaid and her Pail-->
+        <scene sceneID="SGw-AD-v6i">
+            <objects>
+                <viewController id="w7l-G4-TTU" customClass="MilkmaidViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dV6-oJ-nA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background08" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-rI-sYZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Milkmaid and her Pail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKb-6U-Nrd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2N8-Qe-iZv">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Patty the Milkmaid was going to the market carrying milk in a pail on her head.
+
+As she went along, she began calculating what she would do with the money she would get for the milk. “I'll buy some fowls from Farmer Brown," said she, "and they will lay eggs each morning, which I will sell to the parson's wife. With the money that I get from the sale of these eggs, I'll buy myself a new dimity frock and a chip hat, and when I go to the market, won't all the young men come up and speak to me! Polly Shaw will be so jealous, but I don't care. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QI9-vp-dtn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bKb-6U-Nrd" firstAttribute="leading" secondItem="dV6-oJ-nA4" secondAttribute="leading" id="3s0-nA-2lv"/>
+                            <constraint firstItem="QI9-vp-dtn" firstAttribute="bottom" secondItem="2N8-Qe-iZv" secondAttribute="bottom" id="JJv-Ne-Wb3"/>
+                            <constraint firstItem="bKb-6U-Nrd" firstAttribute="top" secondItem="QI9-vp-dtn" secondAttribute="top" id="fXv-UZ-RvO"/>
+                            <constraint firstItem="tUc-rI-sYZ" firstAttribute="leading" secondItem="dV6-oJ-nA4" secondAttribute="leading" id="gGw-TU-1AD"/>
+                            <constraint firstAttribute="trailing" secondItem="bKb-6U-Nrd" secondAttribute="trailing" id="ho4-Mn-wdj"/>
+                            <constraint firstAttribute="bottom" secondItem="tUc-rI-sYZ" secondAttribute="bottom" id="kKW-1j-d3B"/>
+                            <constraint firstItem="QI9-vp-dtn" firstAttribute="trailing" secondItem="2N8-Qe-iZv" secondAttribute="trailing" id="l0b-Fg-1OJ"/>
+                            <constraint firstItem="tUc-rI-sYZ" firstAttribute="trailing" secondItem="dV6-oJ-nA4" secondAttribute="trailing" id="m4D-dY-S7G"/>
+                            <constraint firstItem="tUc-rI-sYZ" firstAttribute="top" secondItem="dV6-oJ-nA4" secondAttribute="top" id="qhp-Tj-Xu5"/>
+                            <constraint firstItem="2N8-Qe-iZv" firstAttribute="top" secondItem="bKb-6U-Nrd" secondAttribute="bottom" id="wXp-Zx-tHM"/>
+                            <constraint firstItem="2N8-Qe-iZv" firstAttribute="leading" secondItem="QI9-vp-dtn" secondAttribute="leading" id="xpV-IX-CJ1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="The Milkmaid and her Pail" id="WPl-zK-Tns"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEz-Gm-owu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="35"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="8bk-XB-M3g">
+            <objects>
+                <viewController id="gVC-HH-Nkb" customClass="InfoViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5b5-EF-b1F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background09" translatesAutoresizingMaskIntoConstraints="NO" id="G5r-Nh-A36">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q6Z-az-PsI">
+                                <rect key="frame" x="0.0" y="398" width="414" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="P1T-hx-U6R"/>
+                                </constraints>
+                                <string key="text">Build by Krunal Vaghani
+Level 1 is for age group 3 - 5
+Level 2 is for age group 5 - 8</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s9B-vT-mQB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G5r-Nh-A36" firstAttribute="trailing" secondItem="5b5-EF-b1F" secondAttribute="trailing" id="2kO-hG-mwN"/>
+                            <constraint firstAttribute="bottom" secondItem="G5r-Nh-A36" secondAttribute="bottom" id="6KK-lB-P1N"/>
+                            <constraint firstItem="Q6Z-az-PsI" firstAttribute="leading" secondItem="s9B-vT-mQB" secondAttribute="leading" id="7vf-6q-vwf"/>
+                            <constraint firstItem="s9B-vT-mQB" firstAttribute="trailing" secondItem="Q6Z-az-PsI" secondAttribute="trailing" id="N48-0j-7kJ"/>
+                            <constraint firstItem="G5r-Nh-A36" firstAttribute="leading" secondItem="5b5-EF-b1F" secondAttribute="leading" id="Oyn-G1-t6a"/>
+                            <constraint firstItem="Q6Z-az-PsI" firstAttribute="centerY" secondItem="5b5-EF-b1F" secondAttribute="centerY" id="jIc-ly-YIT"/>
+                            <constraint firstItem="G5r-Nh-A36" firstAttribute="top" secondItem="5b5-EF-b1F" secondAttribute="top" id="meo-Q6-PV3"/>
+                            <constraint firstItem="Q6Z-az-PsI" firstAttribute="centerX" secondItem="5b5-EF-b1F" secondAttribute="centerX" id="xkT-pg-3Yx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Info" id="U30-B8-WWC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kUl-9y-4Li" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="848.4375"/>
+        </scene>
+        <!--A Wise Old Owl-->
+        <scene sceneID="BIU-6v-hDQ">
+            <objects>
+                <viewController id="bwA-HE-pLh" customClass="WiseOwl1ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="naj-Ue-TfP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background07" translatesAutoresizingMaskIntoConstraints="NO" id="A4h-Dz-rj3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Wise Old Owl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaS-Up-NvI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kbf-ZH-h6u">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">There was an old owl who lived in an oak tree. Every day, he observed incidents that occurred around him.
+
+Yesterday, he watched as a young boy helped an old man carry a heavy basket. Today, he saw a young girl shouting at her mother. The more he saw, the less he spoke.
+
+As the days went on, he spoke less but heard more. The old owl heard people talking and telling stories.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hGQ-2x-1DB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A4h-Dz-rj3" firstAttribute="leading" secondItem="naj-Ue-TfP" secondAttribute="leading" id="MAI-hc-3gm"/>
+                            <constraint firstItem="hGQ-2x-1DB" firstAttribute="trailing" secondItem="kbf-ZH-h6u" secondAttribute="trailing" id="USa-q1-s3j"/>
+                            <constraint firstItem="kbf-ZH-h6u" firstAttribute="top" secondItem="zaS-Up-NvI" secondAttribute="bottom" id="VFt-xQ-t5e"/>
+                            <constraint firstItem="zaS-Up-NvI" firstAttribute="leading" secondItem="hGQ-2x-1DB" secondAttribute="leading" id="ZGH-we-MgU"/>
+                            <constraint firstItem="zaS-Up-NvI" firstAttribute="top" secondItem="hGQ-2x-1DB" secondAttribute="top" id="fTK-7M-x1M"/>
+                            <constraint firstItem="kbf-ZH-h6u" firstAttribute="leading" secondItem="hGQ-2x-1DB" secondAttribute="leading" id="gvx-Ep-TAz"/>
+                            <constraint firstItem="A4h-Dz-rj3" firstAttribute="top" secondItem="hGQ-2x-1DB" secondAttribute="top" id="mIb-qj-lb9"/>
+                            <constraint firstItem="hGQ-2x-1DB" firstAttribute="bottom" secondItem="kbf-ZH-h6u" secondAttribute="bottom" id="nEA-5e-xG9"/>
+                            <constraint firstAttribute="bottom" secondItem="A4h-Dz-rj3" secondAttribute="bottom" id="r9U-Tb-Kxn"/>
+                            <constraint firstItem="hGQ-2x-1DB" firstAttribute="trailing" secondItem="zaS-Up-NvI" secondAttribute="trailing" id="sQR-cy-bst"/>
+                            <constraint firstAttribute="trailing" secondItem="A4h-Dz-rj3" secondAttribute="trailing" id="xZI-Vz-gyb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="A Wise Old Owl" id="JwA-Fm-m8D">
+                        <barButtonItem key="rightBarButtonItem" title="Page 2" id="VsJ-P7-qB9">
+                            <connections>
+                                <segue destination="e8T-QD-9yL" kind="show" id="8VI-HZ-fdh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rq0-cb-B7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1964" y="-718"/>
+        </scene>
+        <!--Page 2-->
+        <scene sceneID="fq9-fS-4Eh">
+            <objects>
+                <viewController id="e8T-QD-9yL" customClass="WiseOwl2ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sfx-dh-pq8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background07" translatesAutoresizingMaskIntoConstraints="NO" id="7u3-Kf-Snj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KiU-P5-7gc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">He heard a woman saying an elephant jumped over a fence. He heard a man saying that he had never made a mistake.
+
+The old owl had seen and heard what happened to people. There were some who became better, some who became worse. But the old owl in the tree had become wiser, each and every day.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xFf-6U-4Ml"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7u3-Kf-Snj" secondAttribute="bottom" id="Ftj-F7-57v"/>
+                            <constraint firstItem="KiU-P5-7gc" firstAttribute="top" secondItem="xFf-6U-4Ml" secondAttribute="top" id="LAk-hf-3yC"/>
+                            <constraint firstItem="7u3-Kf-Snj" firstAttribute="trailing" secondItem="sfx-dh-pq8" secondAttribute="trailing" id="Lyd-in-eSZ"/>
+                            <constraint firstItem="xFf-6U-4Ml" firstAttribute="bottom" secondItem="KiU-P5-7gc" secondAttribute="bottom" id="Od8-ar-wTF"/>
+                            <constraint firstItem="7u3-Kf-Snj" firstAttribute="top" secondItem="sfx-dh-pq8" secondAttribute="top" id="UmY-fb-M4T"/>
+                            <constraint firstItem="7u3-Kf-Snj" firstAttribute="leading" secondItem="sfx-dh-pq8" secondAttribute="leading" id="elS-ML-nzm"/>
+                            <constraint firstItem="KiU-P5-7gc" firstAttribute="leading" secondItem="xFf-6U-4Ml" secondAttribute="leading" id="pWc-Zh-2v0"/>
+                            <constraint firstItem="xFf-6U-4Ml" firstAttribute="trailing" secondItem="KiU-P5-7gc" secondAttribute="trailing" id="w1i-yK-cQv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Page 2" id="zkm-nB-Mcd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDn-aR-Nqj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2887" y="-719"/>
+        </scene>
+        <!--Level 1-->
+        <scene sceneID="Vks-ws-bW4">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" id="WC8-o0-k5s" customClass="Level1ViewController" customModule="Krunal_Vaghani_8857416_Lab5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hzl-BU-fwv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background04" translatesAutoresizingMaskIntoConstraints="NO" id="sMN-dc-HDe">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Zfk-GQ-ER4">
+                                <rect key="frame" x="107" y="373" width="200" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="583-L7-zMI">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eyp-q6-HcM"/>
+                                        </constraints>
+                                        <state key="normal" title="A Wise Old Owl">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bwA-HE-pLh" kind="show" id="mjS-vw-hMf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJk-Gj-0Fn">
+                                        <rect key="frame" x="0.0" y="100" width="200" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="9kH-R7-okx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="The Milkmaid and her Pail">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="w7l-G4-TTU" kind="show" id="nbG-AE-1II"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hru-hN-YPx"/>
+                                    <constraint firstAttribute="height" constant="150" id="tw0-2c-grR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IBA-Y9-aMq"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sMN-dc-HDe" firstAttribute="top" secondItem="hzl-BU-fwv" secondAttribute="top" constant="88" id="03V-dv-NBX"/>
+                            <constraint firstItem="Zfk-GQ-ER4" firstAttribute="centerX" secondItem="hzl-BU-fwv" secondAttribute="centerX" id="2ts-Jm-3G9"/>
+                            <constraint firstAttribute="bottom" secondItem="sMN-dc-HDe" secondAttribute="bottom" id="680-ko-mit"/>
+                            <constraint firstAttribute="trailing" secondItem="sMN-dc-HDe" secondAttribute="trailing" id="NlI-Vj-fWr"/>
+                            <constraint firstItem="sMN-dc-HDe" firstAttribute="leading" secondItem="hzl-BU-fwv" secondAttribute="leading" id="PRl-RR-ALK"/>
+                            <constraint firstItem="Zfk-GQ-ER4" firstAttribute="centerY" secondItem="hzl-BU-fwv" secondAttribute="centerY" id="g4m-7Y-iBf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Level 1" id="fkZ-63-nGg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ML-jj-1PP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1148" y="-201"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Dk-UI-5eF">
+            <objects>
+                <navigationController id="Eae-NE-RdO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q6f-vd-GgG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="61C-ar-C0C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blb-tr-5Xx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background03" width="1963" height="2802"/>
+        <image name="background04" width="2233" height="2463"/>
+        <image name="background05" width="1668" height="2501"/>
+        <image name="background06" width="1667" height="2501"/>
+        <image name="background07" width="1334" height="2000"/>
+        <image name="background08" width="1667" height="2500"/>
+        <image name="background09" width="1407" height="2500"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
