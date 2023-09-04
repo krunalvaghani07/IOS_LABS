@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HistoryTableViewController.tableView(_:cellForRowAt:):HistoryTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(Krunal_Vaghani_FE_8857416.Location)location">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewController.navigateToNextVC(withIdentifier:):MainViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WeatherViewController.getWWeatherData(_:_:):WeatherViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
